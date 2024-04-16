@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment registration form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <form action="">
+        <h1 class="main">Payment Registration Form </h1><hr>
+        <h2>Contact Information</h2>
+        <p>Required fields are followed by *</p>
+
+        <div>Name:*<input type="text" name="name" placeholder="Ankit Pandey"></div><br>
+        
+        
+        <div>
+            <fieldset>
+            <legend>Gender*</legend> 
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+            <input type="radio" name="gender">Others
+        </fieldset>
+        </div> <br>
+        
+        <div>Address: <br><textarea name="add" id="add" cols="100" rows="10"></textarea>
+        </div><br>
+
+        <div>Email:* <input type="email" name="email"></div><br>
+
+        <div>Pincode:* <input type="number" name="pin"></div><br>
+
+        <h2>Payment  Information</h2>
+        
+        <div>Card Type:*
+            <select name="Card_Type" id="card_type">
+            <option value="">select a card type</option>
+            <option value="visa">Visa</option>
+            <option value="rupay">Rupay</option>
+            <option value="masterCard">masterCard</option>
+        </select>
+        </div><br>
+
+        <div>
+            Card Number:*
+            <input type="number">
+        </div><br>
+
+        <div>
+            Expiration Date:*
+            <input type="date" name="exp_date">
+        </div><br>
+
+        <div>CVV:*
+            <input type="password">
+        </div><br>
+
+        <input type="submit" value="Pay Now">
+
+
+    </form>
+</div>
+    
+</body>
+</html>
